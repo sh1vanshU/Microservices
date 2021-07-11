@@ -1,0 +1,9 @@
+Resources:
+  guestservice:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: 'com.microservice.guestservice.GuestWebService_Controller::getGuest'
+      CodeUri: 'C:/Users/Shivanshu.gua/Desktop/Microservice/guest-service'
+      Runtime: java15
+      Environment:
+        Variables: {}
